@@ -1,0 +1,134 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="de">
+<head>
+    <title>mathicle - Ludwig Austermann</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    
+    
+     <link rel="stylesheet" href="/libs/highlight/github.min.css">
+ 
+    
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/fontawesome-all.min.css">
+</head>
+
+<body class="is-preload">
+  <!-- Wrapper -->
+  <div id="wrapper">
+    <!-- Main -->
+    <div id="main">
+      <div class="inner">
+        <!-- Header -->
+  <header id="header">
+      <a href=".." class="logo"><strong>mathicle</strong> von Ludwig Austermann</a>
+  </header>
+
+        <!-- Content appended here --><div class="franklin-content">
+<section> <header class="main">
+    <h1>          Mathicle </h1>
+</header></p>
+<span class="image main"><img style="width:80%;padding-left:20%;" src=" /assets/images/mathicletitlecropped.png" alt="" /></span>
+<p>Mathicle wurde aus dem Eigenbedarf geschrieben, um während des Studiums die Hausaufgabenblätterabgaben in LaTeX einfacher und schöner zu gestalten. Die wichtigsten Funktionen sind:</p>
+<ul>
+<li><p>die <code>task</code>-Umgebung, welche Aufgabenstellungen vorformatiert und insbesondere den Quelltext übersichtlich macht</p>
+</li>
+<li><p>mehre Sprachen bereitstellt</p>
+</li>
+<li><p>Standardpakete lädt</p>
+</li>
+<li><p>optionale Features bereitstellt und damit je nach mathematischer Disziplin andere Shortcuts und Umgebungen freischaltet</p>
+</li>
+<li><p>Unicode support zum einfachen kopieren von Nicht-Quelltexten</p>
+</li>
+</ul>
+<p>Um auf mathicle zuzugreifen, kann folgender Link benutzt werden: <ul class="actions"> <li><a href=" https://www.overleaf.com/read/grtrcyqtmmxn" class="button big"> mathicle öffnen</a></li></ul> Gibt es allerdings Verbesserungsvorschläge oder Änderungen, so kontaktieren Sie mich gerne. Ich kann Ihnen auch einen Schreibezugriff zusenden.</p>
+<hr class="major" />
+<h2 id="die_task-umgebung"><a href="#die_task-umgebung" class="header-anchor">Die <code>task</code>-Umgebung</a></h2>
+<p>Es gibt je nach <a href="#klassenoptionen">Klassenoption</a> <code>autocount</code> zwei Varianten der Aufgabenumgebung. Ohne <code>autocount</code> sieht die Aufgabenumgebung wiefolgt aus:</p>
+<pre><code class="language-LaTeX">\begin&#123;task&#125;&#91;Aufgabentitel&#93;&#123;Nummerierung&#125;&#123;Punktzahl&#125;
+    Aufgabenstellung
+\end&#123;task&#125;</code></pre>
+<p>Mit <code>autocount</code> fällt die Nummerierung weg, welche dann in <code>taskcounter</code> gespeichert wird.</p>
+<h2 id="klassenoptionen"><a href="#klassenoptionen" class="header-anchor">Klassenoptionen</a></h2>
+<p>In dieser Klasse werden folgende Klassenoptionen zur verfügung gestellt:</p>
+<table><tr><th align="right">Optionsname</th><th align="right">Abkürzung</th><th align="right">Beschreibung</th></tr><tr><td align="right">homework</td><td align="right">hw</td><td align="right">erändert den Befehl <code>\maketitle</code></td></tr><tr><td align="right">stochastics</td><td align="right">pt</td><td align="right">Bietet Shortcuts für wahrscheinlichkeitstheoretische Objekte an</td></tr><tr><td align="right">geometry</td><td align="right">geo</td><td align="right">Bietet Shortcuts für geometrische Objekte an</td></tr><tr><td align="right">algebra</td><td align="right">alg</td><td align="right">Bietet Shortcuts für algebraische Objekte an</td></tr><tr><td align="right">units</td><td align="right"></td><td align="right">Bietet Shortcuts für grundlegende Einheiten an</td></tr><tr><td align="right">english</td><td align="right">en</td><td align="right">Übersetzt die Umgebungen und Befehle automatisch auf Englisch</td></tr><tr><td align="right">hidetasks</td><td align="right">ht</td><td align="right">Versteckt automatisch die Aufgabenstellung</td></tr><tr><td align="right">autocount</td><td align="right">ac</td><td align="right">Verändert die Aufgabenumgebung so, dass die Nummerierung automatisch erfolgt</td></tr></table>
+<h2 id="klammerungsbefehle"><a href="#klammerungsbefehle" class="header-anchor">Klammerungsbefehle</a></h2>
+<p>In mathicle werden Klammerungsbefehle freigegeben, welche häufig auftretende Klammerungen vereinfachen sollen. So wird standardmässig <code>\Set</code> bereitgestellt, welche aus <code>\Set*&#123;x\in\R^n \given \sum\scp&#123;x&#125;&#123;y_i&#125;&#61;0&#125;</code> &#40;<code>scp&#123;&#125;&#123;&#125;</code> ist für das Skalarprodukt definiert&#41; folgendes liefert</p>
+<img style="width: 400px; max-width: 100%;" src=" /assets/images/mathiclesetexample.png">
+<p>Der Befehl <code>\given</code> ist nur innerhalb solcher &#39;Umgebungen definiert&#39; und erzeugt den senkrechten Strich. Der Stern nach <code>\Set</code> ist optional und passt die Klammerung der Größe des Inhaltes an. Lädt man nun die <a href="#klassenoptionen">Klassenoption</a> <code>stochastics</code> dazu, so werden <code>\P</code>, <code>\E</code> und <code>\V</code> als Klammerungsbefehle zur Verfügung gestellt. Diese aggieren genause wie <code>\Set</code>, wobei die Klammern aber andere sind. </section>
+
+<div class="page-foot">
+    Diese Seite wurde zuletzt am 27.04.2022 bearbeitet.
+</div>
+</div>                <!-- CONTENT ENDS HERE -->
+            </div>
+        </div>
+        <div id="sidebar">
+    <div class="inner">
+        <!-- Search -->
+        <section id="search" class="alt menulike">
+            <input type="text" placeholder="Suche" onkeyup="showResult(this)" />
+            <ul id="searchres" style="padding: 5px; padding-bottom: 0;"></ul>
+        </section>
+        <script src="/libs/search.js"></script>
+        <!-- Menu -->
+        <nav id="menu">
+            <header class="major">
+                <h2>Menu</h2>
+            </header>
+            <ul>
+                <li><a href="/">Startseite</a></li>
+                <li><a href="/cv">Lebenslauf</a></li>
+                <li><span class="opener">Mathematik</span>
+<ul>
+	<li><a href="/mathematics\/">Übersicht</a></li><li><a href="/mathematics\latex/">LaTeX Pakete</a></li><li><a href="/mathematics\mathicle/">mathicle</a></li><li><a href="/mathematics\tut/">Lernmaterialien</a></li></ul></li>
+                <li><span class="opener">Projekte</span>
+<ul>
+	<li><a href="/projects\/">Übersicht</a></li></ul></li>
+                <li><a href="/further">Sonstiges</a></li>
+                <li><a href="/impressum">Impressum</a></li>
+            </ul>
+        </nav>
+        <!-- Section -->
+        <section>
+            <header class="major">
+                <h2>Kontaktdaten</h2>
+            </header>
+            <ul class="contact">
+                <li class="icon solid fa-envelope"><a href="mailto:l.austermann@tu-berlin.de">l.austermann@tu-berlin.de</a></li>
+                <li class="icon solid fa-paper-plane"><a href="https://t.me/ludwig_austermann">@ludwig_austermann</li>
+                </a></li>
+            </ul>
+            <p>Für weitere Kontaktinformationen einfach per Email oder Telegram nachfragen.</p>
+        </section>
+        <!-- Footer -->
+        <footer id="footer">
+            <p class="copyright">&copy; Ludwig Austermann 2022. Alle Rechte vorbehalten. Design: <a href="https://html5up.net">HTML5 UP</a>.
+                Webseite erstellt mit <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> und <a
+                    href="https://julialang.org">Julia</a>.
+            </p>
+        </footer>
+    </div>
+</div>
+    </div>
+    <!-- Scripts -->
+    <script src="/libs/jquery.min.js"></script>
+    <script src="/libs/browser.min.js"></script>
+    <script src="/libs/breakpoints.min.js"></script>
+    <script src="/libs/util.js"></script>
+    <script src="/libs/main.js"></script>
+    
+    
+        <script src="/libs/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();hljs.configure({tabReplace: '    '});</script>
+
+    
+</body>
+
+</html>
